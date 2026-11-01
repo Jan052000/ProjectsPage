@@ -3,6 +3,7 @@
 <head>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="global.css">
     <script defer src="./Elements/Project/ProjectItem.js"></script>
     <script defer src="./Elements/ProjectList/ProjectList.js"></script>
     <script defer src="./main.js"></script>
@@ -10,11 +11,13 @@
 </head>
 
 <body>
+    <h1>Liste verfügbarer Projekte</h1>
+    <div class="Indent1">
+        <project-list></project-list>
+    </div>
     <input hidden type="checkbox" id="themeSwitchCheck">
     <button id="themeSwitch">
         <img src="./Resources/dark_mode_24dp.svg" id="dark_mode">
         <img src="./Resources/light_mode_24dp.svg" id="light_mode">
     </button>
-    <h1>Liste verfügbarer Projekte</h1>
-    <project-list></project-list>
 </body>

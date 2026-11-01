@@ -17,6 +17,7 @@ class ProjectList extends HTMLElement {
     template = document.createElement("template");
     templateContent = `
     <link rel="stylesheet" href="./Elements/ProjectList/styles.css">
+    <link rel="stylesheet" href="global.css">
     <div id="${projectArea}">
     </div>
     `;

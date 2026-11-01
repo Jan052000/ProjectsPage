@@ -1,21 +1,11 @@
-div {
-    font-size: large;
-}
-
 .wrapper {
     background-color: var(--bg-secondary);
     color: var(--text-primary);
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    border-radius: 10px;
 }
 
 .title {

@@ -1,0 +1,11 @@
+.Rounded {
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.Indent1 {
+    margin-left: 1%;
+}

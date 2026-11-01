@@ -11,8 +11,9 @@ class ProjectElement extends HTMLElement {
     template = document.createElement("template");
     templateContent = `
     <link rel="stylesheet" href="./Elements/Project/styles.css">
-    <a id="${projectLink}" class="round">
-        <div class="wrapper">
+    <link rel="stylesheet" href="global.css">
+    <a id="${projectLink}">
+        <div class="wrapper Rounded">
             <div id=${projectTitleName} class ="title">Titel</div>
             <div id="${projectDescription}">Beschreibung</div>
             <div id="${projectLanguages}">Sprachen</div>
