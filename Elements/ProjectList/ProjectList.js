@@ -42,7 +42,7 @@ class ProjectList extends HTMLElement {
                 if (!newValue)
                     return;
                 while (this.projectAreaElement.lastElementChild) {
-                    this.projectAreaElement.removeChild(lastElementChild);
+                    this.projectAreaElement.removeChild(this.projectAreaElement.lastElementChild);
                 }
                 for (let i = 0; i < newValue.length; i++) {
                     const newProject = new ProjectElement();
