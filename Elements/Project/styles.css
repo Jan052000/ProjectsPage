@@ -1,0 +1,28 @@
+div {
+    font-size: large;
+}
+
+.wrapper {
+    background-color: var(--bg-secondary);
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 10px;
+}
+
+.title {
+    padding: 0px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+:hover {
+    background-color: var(--accent-primary);
+}

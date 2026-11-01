@@ -1,0 +1,23 @@
+:root {
+    /* Hintergrund */
+
+    /* Sehr dunkles, elegantes Marineblau */
+    --bg-main: #061444;
+    --bg-secondary: #0c2a8d/*  #062280 */;
+
+
+    /* Textfarben */
+
+    /* Reines Weiß für maximalen Kontrast auf dunklem Grund */
+    --text-primary: #ffffff;
+
+
+    /* Akzentfarben */
+
+    /* Leuchtendes Cyan-Blau für primäre Buttons, Links und Fokus */
+    --accent-primary: #38bdf8;
+    /* Frisches Grün für Erfolgsmeldungen und positive Badges */
+    --accent-success: #4ade80;
+    /* Warmes Amber/Gelb für Warnungen und Highlights */
+    --accent-warning: #fbbf24;
+}
