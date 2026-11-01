@@ -1,6 +1,17 @@
 const projectList = "projectlist";
 const projectArea = "projectArea";
 
+class Project {
+    constructor(projectTitle, projectDescription, projectLink, projectStatus, projectLanguages, projectFrameworks) {
+        this.projectTitle = projectTitle;
+        this.projectDescription = projectDescription;
+        this.projectLink = projectLink;
+        this.projectStatus = projectStatus;
+        this.projectLanguages = projectLanguages;
+        this.projectFrameworks = projectFrameworks;
+    }
+}
+
 class ProjectList extends HTMLElement {
 
     template = document.createElement("template");
