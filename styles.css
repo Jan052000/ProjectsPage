@@ -13,10 +13,12 @@ body {
 
 #dark_mode {
     display: inline;
+    filter: brightness(0) invert(1);
 }
 
 #light_mode {
     display: none;
+    filter: brightness(0);
 }
 
 #themeSwitchCheck:checked+#themeSwitch #dark_mode {
