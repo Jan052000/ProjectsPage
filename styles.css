@@ -4,6 +4,13 @@ body {
     font-size: larger;
 }
 
+.card{
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    display: block;
+    width: max-content;
+}
+
 #dark_mone {
     display: inline;
 }
