@@ -11,6 +11,11 @@ body {
     width: max-content;
 }
 
+.tableWrapper {
+    display: inline-block;
+    vertical-align: top;
+}
+
 #dark_mode {
     display: inline;
     filter: brightness(0) invert(1);

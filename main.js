@@ -21,3 +21,15 @@ const skillsContent = new TableContent(
         ["Delphi", "Grundkenntnisse"]
     ]);
 skillsTableElement.setAttribute(SkillsTable.contentProperty, JSON.stringify(skillsContent));
+
+const frameworkTableElement = document.querySelector("#frameworkTable");
+const frameworkContent = new TableContent(
+    ["Framework", "Einschätzung"],
+    [
+        ["Windows Forms", "Fortgeschritten"],
+        ["Swing", "Grundkenntnisse"],
+        ["AWT", "Grundkenntnisse"],
+        ["Angular", "Grundkenntnisse"]
+    ]
+);
+frameworkTableElement.setAttribute(SkillsTable.contentProperty, JSON.stringify(frameworkContent));
