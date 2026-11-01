@@ -68,11 +68,11 @@ class SkillsTable extends HTMLElement {
         let body = document.createElement("tbody");
         for (let i = 0; i < rows.length; i++) {
             let rowElement = document.createElement("tr");
-            if(rows[i].length !== this.columnHeaderCount)
+            if (rows[i].length !== this.columnHeaderCount)
                 console.warn("Column header length and row length did not match, some items were omitted");
-            for(let j = 0; j < this.columnHeaderCount; j++){
+            for (let j = 0; j < this.columnHeaderCount; j++) {
                 let cell;
-                if(j === 0)
+                if (j === 0)
                     cell = document.createElement("th");
                 else
                     cell = document.createElement("td");

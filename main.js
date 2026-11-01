@@ -13,11 +13,11 @@ const skillsTableElement = document.querySelector("#langTable");
 const skillsContent = new TableContent(
     ["Sprache", "Einschätzung"],
     [
-    ["C#", "Fortgeschritten"],
-    ["Java", "Grundkenntnisse"],
-    ["TypeScript", "Grundkenntnisse"],
-    ["JavaScript", "Fortgeschritten"],
-    ["Python", "Grundkenntnisse"],
-    ["Delphi", "Grundkenntnisse"]
+        ["C#", "Fortgeschritten"],
+        ["Java", "Grundkenntnisse"],
+        ["TypeScript", "Grundkenntnisse"],
+        ["JavaScript", "Fortgeschritten"],
+        ["Python", "Grundkenntnisse"],
+        ["Delphi", "Grundkenntnisse"]
     ]);
 skillsTableElement.setAttribute(SkillsTable.contentProperty, JSON.stringify(skillsContent));
