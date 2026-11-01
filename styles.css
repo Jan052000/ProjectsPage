@@ -31,7 +31,7 @@ body {
     height: 50px;
 }
 
-#themeSwitch:hover{
+#themeSwitch:hover {
     background-color: var(--accent-primary);
     cursor: pointer;
 }
