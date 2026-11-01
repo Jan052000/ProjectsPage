@@ -4,6 +4,7 @@ div {
 
 .wrapper {
     background-color: var(--bg-secondary);
+    color: var(--text-primary);
     border-radius: 10px;
     padding-left: 10px;
     padding-right: 5px;

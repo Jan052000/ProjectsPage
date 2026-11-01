@@ -1,5 +1,37 @@
 body {
     background-color: var(--bg-main);
-    color: white;
+    color: var(--text-primary);
     font-size: larger;
+}
+
+#dark_mone {
+    display: inline;
+}
+
+#light_mode {
+    display: none;
+}
+
+#themeSwitchCheck:checked+#themeSwitch #dark_mode {
+    display: none;
+}
+
+#themeSwitchCheck:checked+#themeSwitch #light_mode {
+    display: inline;
+}
+
+#themeSwitch {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    border: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#themeSwitch:hover{
+    background-color: var(--accent-primary);
+    cursor: pointer;
 }

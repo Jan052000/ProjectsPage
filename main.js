@@ -15,3 +15,8 @@ const projects = [
 ];
 const projectListElement = document.querySelector("project-list");
 projectListElement.setAttribute("projectlist", JSON.stringify(projects));
+
+const themeSwitch = document.querySelector("#themeSwitchCheck");
+const themeSwitchButton = document.querySelector("#themeSwitch");
+
+themeSwitchButton.addEventListener("click", (_) => { themeSwitch.checked = !themeSwitch.checked });

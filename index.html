@@ -7,9 +7,20 @@
     <script defer src="./Elements/Project/ProjectItem.js"></script>
     <script defer src="./Elements/ProjectList/ProjectList.js"></script>
     <title>Projektliste</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=light_mode,dark_mode" />
 </head>
 
 <body>
+    <input hidden type="checkbox" id="themeSwitchCheck">
+    <button id="themeSwitch">
+        <span class="material-symbols-outlined" id="dark_mode">
+            dark_mode
+        </span>
+        <span class="material-symbols-outlined" id="light_mode">
+            light_mode
+        </span>
+    </button>
     <h1>Liste verfügbarer Projekte</h1>
     <!-- <project-item projecttitle="BerichtManager" projectlink="https://github.com/Jan052000/BerichtManager" projectstatus="Public">
         <div slot="projectdescription">
