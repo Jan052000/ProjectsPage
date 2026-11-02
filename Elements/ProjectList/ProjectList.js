@@ -1,4 +1,17 @@
+/**
+ * Class to order attributes of projects
+ */
 class Project {
+
+    /**
+     * Creates a new Project
+     * @param {String} projectTitle Title of the Project
+     * @param {String} projectDescription Short description
+     * @param {String} projectLink Link to project
+     * @param {String} projectStatus Availability of project
+     * @param {String} projectLanguages Languages used in project
+     * @param {String} projectFrameworks Frameworks used in project
+     */
     constructor(projectTitle, projectDescription, projectLink, projectStatus, projectLanguages, projectFrameworks) {
         this.projectTitle = projectTitle;
         this.projectDescription = projectDescription;
@@ -10,7 +23,14 @@ class Project {
 }
 
 class ProjectList extends HTMLElement {
+
+    /**
+     * Name for the attribute of the list content
+     */
     static get projectListAttributeName() { return "projectlist" };
+    /**
+     * Id for the wrapping div
+     */
     projectArea = "projectArea";
 
     template = document.createElement("template");

@@ -1,10 +1,28 @@
 class ProjectElement extends HTMLElement {
 
+    /**
+     * Name of the attribute for the project title
+     */
     static get projectTitleName() { return "projecttitle" };
+    /**
+     * Name of the attribute for the description
+     */
     static get projectDescription() { return "projectdescription" };
+    /**
+     * Name of the attribute for the project link
+     */
     static get projectLink() { return "projectlink" };
+    /**
+     * Name of the attribute for the availability
+     */
     static get projectStatus() { return "projectstatus" };
+    /**
+     * Concatinated list of languages
+     */
     static get projectLanguages() { return "projectlanguages" };
+    /**
+     * Concatinated list of frameworks
+     */
     static get projectFrameworks() { return "projectframeworks" };
 
     template = document.createElement("template");

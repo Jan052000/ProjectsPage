@@ -1,4 +1,12 @@
+/**
+ * Class to order contents of the table
+ */
 class TableContent {
+    /**
+     * Creates a new TableContent object
+     * @param {String[]} columnHeaders Content for the table column headers
+     * @param {String[][]} rows Content for the rows
+     */
     constructor(columnHeaders, rows) {
         this.columnHeaders = columnHeaders;
         this.rows = rows;
@@ -7,9 +15,18 @@ class TableContent {
 
 class SkillsTable extends HTMLElement {
 
+    /**
+     * Count of column headers to match row content for each cell
+     */
     columnHeaderCount = -1;
+    /**
+     * Id for the table element
+     */
     tableID = "contentTable";
 
+    /**
+     * Name for the attribute for the TableContent
+     */
     static get contentProperty() { return "content" };
     template = document.createElement("template");
     templateContent = `
@@ -47,6 +64,11 @@ class SkillsTable extends HTMLElement {
         }
     }
 
+    /**
+     * Generates the head of the table
+     * @param {String[]} columnHeaders Content for the column headers 
+     * @returns HTMLElement for the table head
+     */
     GetTableHead(columnHeaders) {
         this.columnHeaderCount = columnHeaders.length;
         let head = document.createElement("thead");
@@ -64,6 +86,11 @@ class SkillsTable extends HTMLElement {
         return head;
     }
 
+    /**
+     * Generates the body of the table
+     * @param {String[][]} rows Content of the table
+     * @returns HTMLElement for the table body
+     */
     GetTableBody(rows) {
         let body = document.createElement("tbody");
         for (let i = 0; i < rows.length; i++) {
