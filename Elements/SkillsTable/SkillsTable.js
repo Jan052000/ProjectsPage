@@ -10,7 +10,7 @@ class SkillsTable extends HTMLElement {
     columnHeaderCount = -1;
     tableID = "contentTable";
 
-    static contentProperty = "content";
+    static get contentProperty() { return "content" };
     template = document.createElement("template");
     templateContent = `
     <link rel="stylesheet" href="./Elements/SkillsTable/styles.css">

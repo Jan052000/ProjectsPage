@@ -3,7 +3,7 @@ const projects = [
     new Project("Kaffeemaschinen Planer", "Ein Programm zum automatischen Planen des Kaffeemaschinendienstes während meiner Ausbildung.", "https://github.com/Jan052000/KaffeeMaschinenPlaner", "Private", "C#", ".NET Core, WindowsForms")
 ];
 const projectListElement = document.querySelector("project-list");
-projectListElement.setAttribute("projectlist", JSON.stringify(projects));
+projectListElement.setAttribute(ProjectList.projectListAttributeName, JSON.stringify(projects));
 
 const themeSwitch = document.querySelector("#themeSwitchCheck");
 const themeSwitchButton = document.querySelector("#themeSwitch");

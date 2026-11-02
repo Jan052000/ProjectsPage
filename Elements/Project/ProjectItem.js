@@ -1,24 +1,23 @@
-const projectTitleName = "projecttitle";
-const projectDescription = "projectdescription";
-const projectLink = "projectlink";
-const projectStatus = "projectstatus";
-const projectLanguages = "projectlanguages";
-const projectFrameworks = "projectframeworks";
-
-
 class ProjectElement extends HTMLElement {
+
+    static get projectTitleName() { return "projecttitle" };
+    static get projectDescription() { return "projectdescription" };
+    static get projectLink() { return "projectlink" };
+    static get projectStatus() { return "projectstatus" };
+    static get projectLanguages() { return "projectlanguages" };
+    static get projectFrameworks() { return "projectframeworks" };
 
     template = document.createElement("template");
     templateContent = `
     <link rel="stylesheet" href="./Elements/Project/styles.css">
     <link rel="stylesheet" href="global.css">
-    <a id="${projectLink}">
+    <a id="${ProjectElement.projectLink}">
         <div class="wrapper Rounded">
-            <div id=${projectTitleName} class ="title">Titel</div>
-            <div id="${projectDescription}">Beschreibung</div>
-            <div id="${projectLanguages}">Sprachen</div>
-            <div id="${projectFrameworks}">Frameworks></div>
-            <div id=${projectStatus}>Status</div>
+            <div id=${ProjectElement.projectTitleName} class ="title">Titel</div>
+            <div id="${ProjectElement.projectDescription}">Beschreibung</div>
+            <div id="${ProjectElement.projectLanguages}">Sprachen</div>
+            <div id="${ProjectElement.projectFrameworks}">Frameworks></div>
+            <div id=${ProjectElement.projectStatus}>Status</div>
         </div>
     </a>
     `;
@@ -28,36 +27,36 @@ class ProjectElement extends HTMLElement {
         this.template.innerHTML = this.templateContent;
         const shadow = this.attachShadow({ mode: "open" });
         shadow.append(this.template.content.cloneNode(true));
-        this.projectLinkElement = shadow.querySelector(`#${projectLink}`);
-        this.projectDescriptionElement = shadow.querySelector(`#${projectDescription}`);
-        this.projectStatusElement = shadow.querySelector(`#${projectStatus}`);
-        this.projectTitleElement = shadow.querySelector(`#${projectTitleName}`);
-        this.projectLanguagesElement = shadow.querySelector(`#${projectLanguages}`);
-        this.projectFrameworksElement = shadow.querySelector(`#${projectFrameworks}`);
+        this.projectLinkElement = shadow.querySelector(`#${ProjectElement.projectLink}`);
+        this.projectDescriptionElement = shadow.querySelector(`#${ProjectElement.projectDescription}`);
+        this.projectStatusElement = shadow.querySelector(`#${ProjectElement.projectStatus}`);
+        this.projectTitleElement = shadow.querySelector(`#${ProjectElement.projectTitleName}`);
+        this.projectLanguagesElement = shadow.querySelector(`#${ProjectElement.projectLanguages}`);
+        this.projectFrameworksElement = shadow.querySelector(`#${ProjectElement.projectFrameworks}`);
     }
 
     static get observedAttributes() {
-        return [projectTitleName, projectDescription, projectLink, projectStatus, projectLanguages, projectFrameworks];
+        return [ProjectElement.projectTitleName, ProjectElement.projectDescription, ProjectElement.projectLink, ProjectElement.projectStatus, ProjectElement.projectLanguages, ProjectElement.projectFrameworks];
     }
 
     attributeChangedCallback(name, oldValue, newValue) {
         switch (name) {
-            case projectTitleName:
+            case ProjectElement.projectTitleName:
                 this.projectTitleElement.innerHTML = newValue;
                 break;
-            case projectLink:
+            case ProjectElement.projectLink:
                 this.projectLinkElement.href = newValue;
                 break;
-            case projectDescription:
+            case ProjectElement.projectDescription:
                 this.projectDescriptionElement.innerHTML = newValue;
                 break;
-            case projectStatus:
+            case ProjectElement.projectStatus:
                 this.projectStatusElement.innerHTML = `Status: ${newValue}`;
                 break;
-            case projectLanguages:
+            case ProjectElement.projectLanguages:
                 this.projectLanguagesElement.innerHTML = `Sprachen: ${newValue}`;
                 break;
-            case projectFrameworks:
+            case ProjectElement.projectFrameworks:
                 this.projectFrameworksElement.innerHTML = `Frameworks: ${newValue}`;
                 break;
         }
