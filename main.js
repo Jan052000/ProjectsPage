@@ -41,3 +41,18 @@ const frameworkContent = new TableContent(
 );
 frameworkTableElement.setAttribute(SkillsTable.contentProperty, JSON.stringify(frameworkContent));
 //#endregion
+
+//#region Fill other known technologies
+const technologyTableElement = document.querySelector("#technologyTable");
+const technologyContent = new TableContent(
+    ["Unkategorisiert", "Einschätzung"],
+    [
+        ["HTML", "Grundkenntnisse"],
+        ["CSS", "Grundkenntnisse"],
+        ["GraphQL", "Grundkenntnisse"],
+        ["SQL", "Grundkenntnisse"],
+        ["Win32 API", "Grundkenntnisse"]
+    ]
+);
+technologyTableElement.setAttribute(SkillsTable.contentProperty, JSON.stringify(technologyContent));
+//#endregion
